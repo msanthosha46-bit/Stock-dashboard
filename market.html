@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market | StockAI</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h2><i class="fa-solid fa-chart-line"></i> StockAI</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="market.html" class="active">Market</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="ai.html">GenAI</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <section class="market-hero">
+        <h1>Live Stock Market</h1>
+        <p>Track Market Trends, Top Gainers, Top Losers and Market News.</p>
+    </section>
+
+    <section class="clock-section">
+        <h2>Current Time</h2>
+        <h1 id="clock">00:00:00</h1>
+    </section>
+
+    <section class="countdown">
+        <h2>Market Closing In</h2>
+        <h1 id="countdown">03:30:00</h1>
+    </section>
+
+    <section class="search-section">
+        <input type="text"
+            id="searchInput"
+            placeholder="Search Company Name...">
+    </section>
+
+    <section class="slider">
+    <button id="prevBtn">❮</button>
+    <img
+        id="sliderImage"
+        src="images/stock3.jpg"
+        alt="Stock Market">
+    <button id="nextBtn">❯</button>
+    </section>
+
+    <section class="market-overview">
+
+        <div class="market-card">
+            <h3>NIFTY 50</h3>
+            <h2 id="nifty">25,150</h2>
+            <p class="green">+1.20%</p>
+        </div>
+
+        <div class="market-card">
+            <h3>SENSEX</h3>
+            <h2 id="sensex">82,480</h2>
+            <p class="green">+0.82%</p>
+        </div>
+
+        <div class="market-card">
+            <h3>BANK NIFTY</h3>
+            <h2>56,900</h2>
+            <p class="red">-0.31%</p>
+        </div>
+
+        <div class="market-card">
+            <h3>NASDAQ</h3>
+            <h2>20,630</h2>
+            <p class="green">+0.55%</p>
+        </div>
+
+    </section>
+    
+    <section>
+        <h2>Top Gainers</h2>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+=
+            </tr>
+
+            <tr>
+                <td>Adani Power</td>
+                <td>₹720</td>
+                <td class="green">+5.31%</td>
+            </tr>
+
+            <tr>
+                <td>Zomato</td>
+                <td>₹310</td>
+                <td class="green">+4.20%</td>
+            </tr>
+
+            <tr>
+                <td>Tata Steel</td>
+                <td>₹188</td>
+                <td class="green">+3.91%</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section>
+        <h2>Top Losers</h2>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+            </tr>
+
+            <tr>
+                <td>HCL Tech</td>
+                <td>₹1540</td>
+                <td class="red">-2.40%</td>
+            </tr>
+
+            <tr>
+                <td>Tech Mahindra</td>
+                <td>₹1320</td>
+                <td class="red">-1.82%</td>
+            </tr>
+
+            <tr>
+                <td>Wipro</td>
+                <td>₹560</td>
+                <td class="red">-1.15%</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="news">
+        <h2>Latest Market News</h2>
+        <div class="news-card">
+            <h3>Sensex Hits New High</h3>
+            <p>Indian stock market continues its bullish trend with strong investor confidence.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Technology Stocks Rise</h3>
+            <p>IT companies recorded strong quarterly earnings driving market growth. </p>
+        </div>
+
+        <div class="news-card">
+            <h3>Banking Sector Update</h3>
+            <p>Banking stocks remain stable with positive financial performance.</p>
+        </div>
+
+    </section>
+    <section class="market-status">
+
+        <h2>Market Status</h2>
+
+        <h1 class="green" id="marketStatus">OPEN</h1>
+
+    </section>
+    
+    <div id="toast">
+        Market Updated Successfully
+    </div>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <footer>
+        <p> © 2026 Real-Time Stock Market Dashboard + GenAI</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

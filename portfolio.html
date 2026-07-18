@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | StockAI</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2><i class="fa-solid fa-chart-pie"></i> StockAI</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="market.html">Market</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="ai.html">GenAI</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <section class="portfolio-hero">
+        <h1>My Investment Portfolio</h1>
+        <p>
+            Track your investments, calculate profit or loss,
+            and manage your financial growth.
+        </p>
+    </section>
+
+    <section class="clock-section">
+        <h2>Current Time</h2>
+        <h1 id="clock">00:00:00</h1>
+    </section>
+    
+    <section class="watchlist">
+    <h2>My Watchlist</h2>
+    <ul id="watchlist"></ul>
+    <button id="clearWatchlist">
+        Clear Watchlist
+    </button>
+</section>
+
+    <section class="calculator">
+        <h2>Portfolio Calculator</h2>
+        <input type="number"
+            id="buyPrice"
+            placeholder="Buy Price">
+
+        <input type="number"
+            id="currentPrice"
+            placeholder="Current Price">
+
+        <input type="number"
+            id="quantity"
+            placeholder="Quantity">
+
+        <button id="calculateBtn">Calculate</button>
+<button id="resetCalculator">Reset Calculator</button>
+        </button>
+    </section>
+
+    <section class="result">
+        <h2>Calculation Result</h2>
+        <h3 id="investment">
+            Total Investment : ₹0
+        </h3>
+        <h3 id="currentValue">
+            Current Value : ₹0
+        </h3>
+        <h3 id="profitLoss">
+            Profit / Loss : ₹0
+        </h3>
+
+    </section>
+
+    <section class="summary">
+        <h2>Portfolio Summary</h2>
+        <div class="summary-container">
+            <div class="card">
+                <h3>Total Investment</h3>
+                <h2>₹2,50,000</h2>
+            </div>
+
+            <div class="card">
+                <h3>Current Value</h3>
+                <h2>₹2,84,000</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Profit</h3>
+                <h2 class="green">+₹34,000</h2>
+            </div>
+
+            <div class="card">
+                <h3>Today's Return</h3>
+                <h2 class="green">+2.6%</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="progress-section">
+        <h2>Investment Goal</h2>
+        <div class="progress-bar">
+            <div id="progressFill"> 75%</div>
+        </div>
+
+    </section>
+
+    <section class="holdings">
+        <h2>My Holdings</h2>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>TCS</td>
+                <td>20</td>
+                <td>₹4120</td>
+                <td class="green">Profit</td>
+            </tr>
+
+            <tr>
+                <td>Infosys</td>
+                <td>15</td>
+                <td>₹1645</td>
+                <td class="green">Profit</td>
+            </tr>
+
+            <tr>
+                <td>Reliance</td>
+                <td>10</td>
+                <td>₹2890</td>
+                <td class="red">Loss</td>
+            </tr>
+
+        </table>
+    </section>
+
+
+    <section class="watchlist">
+        <h2>Saved Watchlist</h2>
+        <ul id="watchlist"></ul>
+
+        
+        <button id="savePortfolio">
+            Save Portfolio</button>
+    </section>
+
+    <div id="toast"> Portfolio Saved Successfully</div>
+
+    <button id="topBtn">
+        ↑
+    </button>
+    
+    <footer>
+        <p>© 2026 Real-Time Stock Market Dashboard + GenAI</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/watchlist.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

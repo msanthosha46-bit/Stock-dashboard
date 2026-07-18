@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Stock Market Dashboard + GenAI</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader">
+        <h2>Loading Dashboard...</h2>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h2>📈 StockAI</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="market.html">Market</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="ai.html">GenAI</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+    <section class="hero">
+        <h1>Real-Time Stock Market Dashboard + GenAI</h1>
+        <p>
+            Monitor live market trends, manage your portfolio,
+            and receive AI-powered investment insights.
+        </p>
+        <br>
+        <button id="exploreBtn">
+            Explore Market
+        </button>
+    </section>
+
+    <section class="clock-section">
+        <h2>Current Time</h2>
+        <h1 id="clock">00:00:00</h1>
+        <p id="todayDate"></p>
+
+    </section>
+
+    <section class="search">
+        <h2 id="search_text">Search Stocks</h2>
+        <br>
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Company...">
+
+    </section>
+    <section class="stocks">
+
+        <div class="stock-card">
+            <h3>Tata Motors</h3>
+            <p>₹950</p>
+            <button class="watchBtn">
+                Add Watchlist
+            </button>
+
+        </div>
+
+        <div class="stock-card">
+            <h3>Infosys</h3>
+            <p>₹1,650</p>
+            <button class="watchBtn">
+                Add Watchlist
+            </button>
+
+        </div>
+
+        <div class="stock-card">
+            <h3>Reliance</h3>
+            <p>₹2,850</p>
+            <button class="watchBtn">
+                Add Watchlist
+            </button>
+
+        </div>
+
+        <div class="stock-card">
+            <h3>TCS</h3>
+            <p>₹4,120</p>
+            <button class="watchBtn">
+                Add Watchlist
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="ai">
+        <h2>GenAI Market Insights</h2>
+        <button id="aiBtn">
+            Generate Suggestion
+        </button>
+
+            <br>
+            <br>
+        <p id="aiResult">
+            Click the button for AI recommendation.
+        </p>
+
+    </section>
+
+    <section class="slider">
+        <img
+        id="sliderImage"
+        src="images/stock1.jpg"
+        alt="Stock Image">
+    </section>
+
+    <section class="market-status">
+        <h2>Today's Market</h2>
+        <div class="market-box">
+
+            <div>
+                <h3>NIFTY 50</h3>
+                <p id="nifty">25,150</p>
+            </div>
+
+            <div>
+                <h3>SENSEX</h3>
+                <p id="sensex">82,400</p>
+            </div>
+
+            <div>
+                <h3>NASDAQ</h3>
+                <p id="nasdaq">20,630</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="quote">
+        <h2>Investment Quote</h2>
+        <p id="quoteText">
+            Invest for the long term.
+        </p>
+        <button id="quoteBtn">
+            New Quote
+        </button>
+
+    </section>
+
+    <button id="topBtn">
+        ↑
+    </button>>
+
+    <div id="toast">
+        Success
+    </div>
+
+    <footer>
+        <p> © 2026 Real-Time Stock Market Dashboard + GenAI </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/watchlist.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/ai.js"></script>
+
+</body>
+</html>

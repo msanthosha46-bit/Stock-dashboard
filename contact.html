@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | StockAI</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2><i class="fa-solid fa-chart-line"></i> StockAI</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="market.html">Market</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="ai.html">GenAI</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>
+            Have questions or feedback?
+            We'd love to hear from you.
+        </p>
+    </section>
+
+    <section class="clock-section">
+        <h2>Current Time</h2>
+        <h1 id="clock">00:00:00</h1>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Message</h2>
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                required>
+
+            <textarea
+                id="message"
+                rows="6"
+                maxlength="300"
+                placeholder="Write your message..."
+                required></textarea>
+
+            <p>
+                Characters:
+                <span id="charCount">0</span>/300
+            </p>
+
+            <button type="submit"> Send Message</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </section>
+
+    <section class="contact-info">
+        <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>support@stockai.com</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="question">What is StockAI?</h3>
+            <p class="answer">StockAI helps users track stock prices and receive AI-powered investment insights.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="question">Is my portfolio secure? </h3>
+            <p class="answer">Yes. Portfolio data is stored securely in your browser using Local Storage.</p>
+        </div>
+    </section>
+
+    <div id="toast">Message Sent Successfully!</div>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <button id="clearStorage"> Clear Storage </button>
+
+    <footer>
+        <p> © 2026 Real-Time Stock Market Dashboard + GenAI</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

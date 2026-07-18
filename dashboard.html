@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | StockAI</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2><i class="fa-solid fa-chart-line"></i> StockAI</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="market.html">Market</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="ai.html">GenAI</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <section class="dashboard-tite">
+        <h1 id="Title">Stock Market Dashboard</h1>
+        <br>
+        <p id="pag">Monitor live stocks, portfolio performance and market activity.</p>
+
+    </section>
+
+    <section class="clock-container">
+        <h2 id="time">Current Time</h2>
+        <h1 id="clock">00:00:00</h1>
+    </section>
+    
+    <section class="search-box">
+        <input type="text"
+            id="searchInput"
+            placeholder="Search Stock...">
+    </section>
+
+    <section class="stock-container">
+
+        <div class="stock-card">
+            <h3>Tata Motors</h3>
+            <h2>₹950</h2>
+            <p class="green">+2.1%</p>
+            <button class="watchBtn">Add Watchlist</button>
+
+        </div>
+
+        <div class="stock-card">
+            <h3>Infosys</h3>
+            <h2>₹1645</h2>
+            <p class="red">-1.2%</p>
+            <button class="watchBtn">Add Watchlist</button>
+        </div>
+
+        <div class="stock-card">
+            <h3>TCS</h3>
+            <h2>₹4120</h2>
+            <p class="green">+1.8%</p>
+            <button class="watchBtn">Add Watchlist</button>
+        </div>
+
+        <div class="stock-card">
+            <h3>Reliance</h3>
+            <h2>₹2890</h2>
+            <p class="green">+0.8%</p>
+            <button class="watchBtn">Add Watchlist</button>
+        </div>
+
+        <div class="stock-card">
+            <h3>HDFC Bank</h3>
+            <h2>₹1810</h2>
+            <p class="red">-0.5%</p>
+            <button class="watchBtn">Add Watchlist</button>
+        </div>
+
+        <div class="stock-card">
+            <h3>ICICI Bank</h3>
+            <h2>₹1275</h2>
+            <p class="green">+3.2%</p>
+            <button class="watchBtn">Add Watchlist</button>
+        </div>
+
+    </section>
+
+    <section class="portfolio-summary">
+
+        <h2>Portfolio Summary</h2>
+        <div class="summary-box">
+            <div>
+                <h3>Total Investment</h3>
+                <h2>₹2,50,000</h2>
+            </div>
+
+            <div>
+                <h3>Current Value</h3>
+                <h2>₹2,78,500</h2>
+            </div>
+
+            <div>
+                <h3>Today's Profit</h3>
+                <h2 class="green">+₹28,500</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="progress-section">
+        <h2>Portfolio Completion</h2>
+        <div class="progress-bar">
+            <div id="progressFill"> 80%</div>
+        </div>
+    </section>
+
+    <section class="watchlist">
+        <h2>My Watchlist</h2>
+        <ul id="watchlist">
+        </ul>
+    </section>
+
+    <section class="gainers">
+        <h2>Top Gainers</h2>
+        <table>
+
+            <tr>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+            </tr>
+
+            <tr>
+                <td>Adani Power</td>
+                <td>₹720</td>
+                <td class="green">+5.3%</td>
+            </tr>
+
+            <tr>
+                <td>Zomato</td>
+                <td>₹310</td>
+                <td class="green">+4.1%</td>
+            </tr>
+
+            <tr>
+                <td>IRCTC</td>
+                <td>₹960</td>
+                <td class="green">+3.8%</td>
+            </tr>
+        </table>
+    </section>
+
+    <div id="toast">Stock Added Successfully!</div>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <footer>
+        <p>© 2026 StockAI Dashboard | Real-Time Stock Market Dashboard + GenAI</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/watchlist.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

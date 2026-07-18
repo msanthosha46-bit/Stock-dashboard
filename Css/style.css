@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial,Helvetica,sans-serif;
+}
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
+}
+body.dark{
+    background:#121212;
+    color:#eee;
+}
+a{text-decoration:none;color:inherit}
+header{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0d6efd;
+    color:#fff;
+    z-index:999;
+}
+.logo h2{font-size:28px}
+nav{
+    display:flex;
+    gap:20px;
+}
+nav a{
+    color:#fff;
+    padding:8px 12px;
+    border-radius:6px;
+    transition:.3s;
+}
+nav a:hover,
+nav a.active{
+    background:#fff;
+    color:#0d6efd;
+}
+#themeBtn{
+    border:none;
+    padding:10px 14px;
+    border-radius:50%;
+    cursor:pointer;
+}
+section{
+    padding:60px 8%;
+}
+.hero,.market-hero,.portfolio-hero,.contact-hero,.ai-hero,.dashboard-title{
+    text-align:center;
+}
+.hero h1,.market-hero h1,.portfolio-hero h1,.contact-hero h1,.ai-hero h1,.dashboard-title h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+.hero p,.market-hero p,.portfolio-hero p,.contact-hero p,.ai-hero p{
+    max-width:800px;
+    margin:auto;
+}
+button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{background:#084298}
+.clock-section,#clock,.countdown{text-align:center}
+#clock,#countdown{
+    font-size:42px;
+    color:#0d6efd;
+    margin-top:10px;
+}
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+.search input,#searchInput{
+    max-width:500px;
+    display:block;
+    margin:auto;
+}
+.stock-container,.stocks,.summary-container,.prediction-container,.market-overview,.contact-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.stock-card,.market-card,.card,.info-card,.news-card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    text-align:center;
+}
+body.dark .stock-card,
+body.dark .market-card,
+body.dark .card,
+body.dark .info-card,
+body.dark .news-card{
+    background:#1e1e1e;
+}
+.green{color:#198754;font-weight:bold}
+.red{color:#dc3545;font-weight:bold}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+table th{
+    background:#0d6efd;
+    color:#fff;
+}
+table th,table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+.progress-bar{
+    width:100%;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+}
+#progressFill{
+    width:75%;
+    background:#198754;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+}
+#sliderImage{
+    width:100%;
+    height:500px;
+    border-radius:10px;
+
+}
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+.faq-item{
+    background:#fff;
+    padding:18px;
+    margin:15px 0;
+    border-radius:8px;
+}
+body.dark .faq-item{background:#1e1e1e}
+.question{cursor:pointer}
+.answer{display:none;margin-top:10px}
+footer{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+}
+#toast{
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    background:#198754;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:6px;
+    display:none;
+}
+#loader{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    z-index:9999;
+}
+body.dark{
+    background:#121212;
+    color:#ffffff;
+    transition:0.3s;
+}
+
+body.dark header{
+    background:#111827;
+}
+
+body.dark footer{
+    background:#111827;
+}
+
+body.dark nav a{
+    color:#ffffff;
+}
+
+body.dark .stock-card,
+body.dark .market-card,
+body.dark .card,
+body.dark .info-card,
+body.dark .news-card,
+body.dark .faq-item{
+    background:#1f2937;
+    color:#ffffff;
+}
+
+body.dark table{
+    background:#1f2937;
+    color:#ffffff;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#374151;
+    color:#ffffff;
+    border:1px solid #4b5563;
+}
+
+body.dark button{
+    background:#2563eb;
+}
+
+body.dark button:hover{
+    background:#1d4ed8;
+}
+.watchlist{
+    margin-top:30px;
+}
+
+.watchlist ul{
+    list-style:none;
+}
+
+.watchlist li{
+    background:#fff;
+    margin:10px 0;
+    padding:12px;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.removeBtn{
+    background:#dc3545;
+}
+
+.removeBtn:hover{
+    background:#bb2d3b;
+}
+
+.slider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    margin:40px auto;
+
+}
+
+.slider img{
+
+    width:100%;
+    max-width:800px;
+    height:420px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+#prevBtn,
+#nextBtn{
+
+    font-size:24px;
+    padding:12px 18px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:#0d6efd;
+    color:white;
+
+}
+
+#prevBtn:hover,
+#nextBtn:hover{
+
+    background:#084298;
+
+}
+#Title{
+    font-size:xx-large;
+    text-align: center;
+
+}
+#pag{
+    font-size: large;
+    text-align:center;
+    
+}
+#resultCount{
+    font-size: xx-large;
+    text-align: center;
+    text-decoration:solid;
+
+    
+}
+#aiResult{
+    font-size: xx-large;
+    text-align: center;
+    text-decoration:solid;
+}
+#aiBtn{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+#search_text{
+    text-align: center;
+}
+#clearStorage{
+    margin-bottom:10px;
+    margin-left: 45%;
+}
+#askAI{
+     margin-left: 45%;
+     margin-top: 10px;
+
+}
+#quoteBtn{
+    margin-top: 10px;
+}
+#time{
+    text-align: center;
+
+}
