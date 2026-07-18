@@ -90,6 +90,7 @@ input,textarea{
     max-width:500px;
     display:block;
     margin:auto;
+    color:#212529;
 }
 .stock-container,.stocks,.summary-container,.prediction-container,.market-overview,.contact-info{
     display:grid;
